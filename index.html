@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"> -->
   <title>Twitter</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header id="main-header">
-    <div class="top">
-      <div class="top-section">
-        <div class="btn">
-          <img src="images/home.svg" alt="">
-          <span>Home</span>
-        </div>
-        <div class="btn">
-          <img src="images/notification.svg" alt="">
-          <span>Notifications</span>
-        </div>
-        <div class="btn">
-          <img src="images/message.svg" alt="">
-          <span>Messages</span>
-        </div>
-      </div>
-      <div class="top-section">
+    <div class="content">
+      <nav>
+        <ul>
+          <li class="btn"><img src="images/home.svg" alt="">
+            <span>Home</span>
+          </li>
+          <li class="btn"><img src="images/notification.svg" alt=""> 
+            <span>Notifications</span>
+          </li>
+          <li class="btn"><img src="images/message.svg" alt=""> 
+            <span>Messages</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo-header">
         <img src="images/logo.svg" alt="">
       </div>
-      <div class="top-section">
-        <div class="search-input">
-          <input type="text" placeholder="Search on Twitter">
-          <img src="images/search.svg" alt="">
-        </div>
+      <div class="right-side">
+        <input type="text" placeholder="Search on Twitter">
         <img src="images/avatar.png" class="avatar" alt="">
-        <input type="button" class="tweet-btn" value="Tweet">
+        <button>Tweet</button>
       </div>
     </div>
   </header>
+  <div class="banner"></div>
 </body>
+
 </html>
