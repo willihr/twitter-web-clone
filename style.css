@@ -366,9 +366,9 @@ div.wrapper-content .widgets .widget a {
   color: rgb(0, 156, 228);
 }
 
-div.wrapper-content .widgets .widget a::before {
+div.wrapper-content .widgets .widget > a::before {
   content:"• ";
-  color: rgb(0, 156, 228);;
+  color: rgb(0, 156, 228);
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list {
@@ -378,16 +378,22 @@ div.wrapper-content .widgets .widget ul.find-friends-list {
 
 div.wrapper-content .widgets .widget ul.find-friends-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+
   padding: 10px 0;
   border-bottom: 1px solid #c7c7c7;
 }
 
-div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow-image {
+div.wrapper-content .widgets .widget ul.find-friends-list li > div {
+  display: flex;
+  align-items: center;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #c7c7c7;
   margin-right: 10px;
 }
 
