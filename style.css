@@ -342,11 +342,12 @@ div.wrapper-content .profile div.widget.images ul li {
 /* Widgets Sidebar */
 
 div.wrapper-content .widgets {
-  margin: 10px 5px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 div.wrapper-content .widgets .widget {
-  width: 280px;
+  width: 290px;
   height: fit-content;
 
   padding: 15px;
@@ -357,18 +358,18 @@ div.wrapper-content .widgets .widget {
 
 div.wrapper-content .widgets .widget b {
   font-size: 18px;
+  color: #1f2226;
 }
 
 div.wrapper-content .widgets .widget a {
+  color: #3BB9E3;
+  font-size: 12px;
   text-decoration: none;
-  position: relative;
-  font-size: 13px;
-  color: rgb(0, 156, 228);
 }
 
 div.wrapper-content .widgets .widget > a::before {
   content:"• ";
-  color: rgb(0, 156, 228);
+  color: #3BB9E3;
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list {
@@ -378,11 +379,13 @@ div.wrapper-content .widgets .widget ul.find-friends-list {
 
 div.wrapper-content .widgets .widget ul.find-friends-list li {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+}
 
-  padding: 10px 0;
-  border-bottom: 1px solid #c7c7c7;
+div.wrapper-content .widgets .widget ul.find-friends-list li + li {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #ccd6dd;
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list li > div {
@@ -391,14 +394,18 @@ div.wrapper-content .widgets .widget ul.find-friends-list li > div {
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list li img {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  margin-right: 10px;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow {
+  margin-left: 10px;
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow b {
   font-size: 14px;
+  color: #1f2226;
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow span {
@@ -407,8 +414,8 @@ div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow spa
 }
 
 div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow button {
-  width: 80px;
-  height: 25px;
+  width: 90px;
+  height: 27px;
   margin-top: 5px;
 
   background-color: white;
@@ -416,6 +423,11 @@ div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow but
   color: #3BB9E3;
   font-weight: bold;
   border-radius: 15px;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li > a {
+  color: grey;
+  font-size: 12px;
 }
 
 div.wrapper-content .widgets .widget span.find-friends {
