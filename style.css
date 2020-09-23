@@ -162,6 +162,7 @@ div.bar .content ul {
 
   list-style: none;
   height: 100%;
+  overflow: auto;
 }
 
 div.bar .content ul li {
@@ -220,7 +221,6 @@ div.bar .content div.actions {
 div.bar .content div.actions button {
   height: 34px;
 
-  margin-right: 15px;
   padding: 0 15px;
   background-color: white;
   font-weight: bold;
@@ -229,10 +229,16 @@ div.bar .content div.actions button {
   border-radius: 20px;
 }
 
+div.bar .content div.actions img {
+  margin: 0 15px;
+}
+
+
 /* Content */
 
 div.wrapper-content {
   display: flex;
+  justify-content: space-between;
 }
 
 /* Profile Sidebar */
@@ -332,3 +338,130 @@ div.wrapper-content .profile div.widget.images ul li {
 }
 
 /* End of Profile Sidebar */
+
+/* Widgets Sidebar */
+
+div.wrapper-content .widgets {
+  margin: 10px 5px;
+}
+
+div.wrapper-content .widgets .widget {
+  width: 280px;
+  height: fit-content;
+
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+div.wrapper-content .widgets .widget b {
+  font-size: 18px;
+}
+
+div.wrapper-content .widgets .widget a {
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  color: rgb(0, 156, 228);
+}
+
+div.wrapper-content .widgets .widget a::before {
+  content:"• ";
+  color: rgb(0, 156, 228);;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #c7c7c7;
+  margin-right: 10px;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow b {
+  font-size: 14px;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow span {
+  font-size: 13px;
+  color: #c7c7c7;
+}
+
+div.wrapper-content .widgets .widget ul.find-friends-list li div.whoToFollow button {
+  width: 80px;
+  height: 25px;
+  margin-top: 5px;
+
+  background-color: white;
+  border: 2px solid #3BB9E3;
+  color: #3BB9E3;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+div.wrapper-content .widgets .widget span.find-friends {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+  font-size: 14px;
+  color: #3BB9E3;
+}
+
+div.wrapper-content .widgets .widget span.find-friends img {
+  width: 16px;
+  height: 16px;
+
+  margin-right: 5px;
+}
+
+/* Trends Widget */
+
+div.wrapper-content .widgets .widget ul.trends-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+div.wrapper-content .widgets .widget ul.trends-list li {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  color: #3BB9E3;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+/* Timeline */
+
+div.wrapper-content section.timeline {
+  /* width: 280px; */
+  /* height: fit-content; */
+  display: flex;
+  flex-grow: 1;
+
+  border-radius: 3px;
+  margin: 10px 5px;
+  background-color: white;
+}
+
+div.wrapper-content .timeline div.title {
+  padding: 15px;
+}
+
+div.wrapper-content .timeline div.post {
+  padding: 15px;
+}
