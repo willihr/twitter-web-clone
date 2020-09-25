@@ -465,21 +465,104 @@ div.wrapper-content .widgets .widget ul.trends-list li {
 
 /* Timeline */
 
-div.wrapper-content section.timeline {
+section.timeline {
   /* width: 280px; */
-  /* height: fit-content; */
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  height: fit-content;
 
   border-radius: 3px;
   margin: 10px 5px;
   background-color: white;
 }
 
-div.wrapper-content .timeline div.title {
-  padding: 15px;
+section.timeline nav {
+  padding: 12px 15px;
 }
 
-div.wrapper-content .timeline div.post {
-  padding: 15px;
+section.timeline nav a {
+  text-decoration: none;
+  color: #3BB9E3;
+  font-weight: bold;
+}
+
+section.timeline nav a + a {
+  margin-left: 15px;
+}
+
+section.timeline nav a.active {
+  color: #1f2226;
+}
+
+section.timeline .tweets div.tweet {
+  display: flex;
+
+  border-top: 1px solid #ccd6dd;
+  padding: 12px 15px;
+}
+
+section.timeline .tweets .tweet img.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+section.timeline .tweets .tweet div.tweet-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+section.timeline .tweets .tweet div.header strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+section.timeline .tweets .tweet .header span.tweet-profile-id {
+  font-size: 13px;
+  color: #c7c7c7;
+}
+
+section.timeline .tweets .tweet .header span.tweet-date {
+  font-size: 13px;
+  color: #c7c7c7;
+}
+
+section.timeline .tweets .tweet .header span.tweet-date::before {
+  content: "• ";
+}
+
+section.timeline .tweets .tweet p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+section.timeline .tweets .tweet div.actions {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 15px;
+}
+
+section.timeline .tweets .tweet .actions a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: #666666;
+  font-size: 13px;
+  font-weight: bold;
+  
+}
+
+section.timeline .tweets .tweet .actions a + a {
+  margin-left: 35px;
+}
+
+section.timeline .tweets .tweet .actions a img {
+  width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
 }
